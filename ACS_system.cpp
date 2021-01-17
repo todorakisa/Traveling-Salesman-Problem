@@ -66,7 +66,7 @@ void ACS_System::print_adj_matrix(){
 }
 
 int ACS_System::generate_start_pos(int min,int max){
-	int n = rand() % (max - min) + min;
+	return rand() % (max - min) + min;
 }
 
 double ACS_System::run(std::vector<point*> &points){
